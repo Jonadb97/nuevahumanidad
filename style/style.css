@@ -1,0 +1,21 @@
+.hero-carousel {
+    height: 95vh;
+}
+
+.hero-carousel>.carousel-inner>.carousel-item>img {
+    height: 95vh;
+    object-fit: cover;
+}
+
+.hero-label {
+    position: absolute;
+    z-index: 1;
+    top: 20vh;
+    left: 2rem;
+    color: white;
+    text-shadow: 2px 2px 15px black;
+}
+
+.hero-label>h1 {
+    font-size: 4rem;
+}

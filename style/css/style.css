@@ -1,0 +1,1222 @@
+@font-face {
+  font-family: Copperplate Gothic;
+  src: url(/assets/fonts/copperplate-gothic-std/Copperplate-Gothic-Std-33-BC.ttf);
+}
+@font-face {
+  font-family: Cooper;
+  src: url(/assets/fonts/CooperFiveOpti-Black.otf);
+}
+@media screen and (max-width: 899px) {
+  * p {
+    font-size: 1rem;
+    font-family: Cooper Gothic;
+    color: rgb(130, 120, 120);
+  }
+  .hero-carousel {
+    height: 92vh;
+  }
+  .card-dir {
+    object-fit: cover;
+    width: 250px;
+    height: 250px;
+  }
+  .hero-carousel > .carousel-inner > .carousel-item > img {
+    height: 92vh;
+    object-fit: cover;
+  }
+  .hero-label {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: 16vh;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 1;
+    color: rgb(247, 241, 237);
+    text-shadow: 2px 2px 15px black;
+    font-family: Copperplate Gothic;
+    text-align: center;
+    /* background-color: rgba(252, 148, 37, 0.4); */
+    background-image: linear-gradient(to right, rgba(252, 148, 37, 0), rgba(252, 148, 37, 0.8), rgba(252, 148, 37, 0));
+    padding: 2rem;
+    /*border-radius: 0px 24px 24px 0px;*/
+    /* box-shadow: 0px 0px 100px white; */
+  }
+  .hero-label img {
+    height: 50vh;
+  }
+  .hero-label h2 {
+    font-weight: 200;
+    font-family: Cooper;
+  }
+  .hero-label > h1 {
+    font-size: 6rem;
+  }
+  .navbar {
+    font-family: Cooper;
+    font-size: 1.5rem;
+    padding: 1rem 1rem 1rem 1rem;
+    z-index: 2;
+  }
+  .navbar * {
+    color: rgb(63, 61, 60);
+  }
+  .nav-item {
+    transition: 0.2s ease-in-out;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .nav-item:hover {
+    font-size: 1.6rem;
+    z-index: 5;
+  }
+  .navbar-brand > img {
+    padding-left: 2rem;
+    height: 64px;
+    transition: 0.2s ease-in-out;
+  }
+  .navbar-brand > img:hover {
+    transform: scale(1.2);
+  }
+  .acerca-de {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    gap: 6rem;
+    color: rgb(247, 241, 237);
+  }
+  .acerca-de h1 {
+    color: #fc9425;
+    font-family: Copperplate Gothic;
+    border-bottom: 1px solid #fc9425;
+    margin-top: 6rem;
+    font-size: 4rem;
+    text-align: center;
+  }
+  .quienes-somos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    gap: 6rem;
+  }
+  .quienes-somos h1 {
+    color: #83b85f;
+    font-family: Copperplate Gothic;
+    border-bottom: 1px solid #64ba2e;
+    margin-top: 6rem;
+    font-size: 3rem;
+  }
+  .quienes-somos .quienes {
+    display: flex;
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+  .quienes-somos .quienes p {
+    padding-right: 2rem;
+  }
+  .quienes-somos .quienes img {
+    width: 40vw;
+    border: 1px solid #fc9425;
+    border-radius: 24px;
+    object-fit: cover;
+  }
+  .mision {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .mision h1 {
+    color: #fc9425;
+    font-family: Copperplate Gothic;
+    border-bottom: 1px solid #fc9425;
+    margin-top: 6rem;
+    font-size: 3rem;
+    text-align: center;
+  }
+  .mision .misiones {
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .mision .misiones .cardmision {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    width: 80vw;
+  }
+  .mision .misiones .cardmision p {
+    color: rgb(130, 120, 120);
+    margin-bottom: auto;
+    text-align: center;
+  }
+  .mision .misiones .cardmision img {
+    width: 6vw;
+  }
+  .ofrecemos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .ofrecemos h1 {
+    color: #64ba2e;
+    font-family: Copperplate Gothic;
+    border-bottom: 1px solid #64ba2e;
+    margin-top: 6rem;
+    font-size: 3rem;
+    text-align: center;
+  }
+  .ofrecemos .servicios {
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-left: 20vw;
+  }
+  .ofrecemos .servicios .cardservicio {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fc9425;
+    border-radius: 24px;
+    padding: 2rem;
+    width: 60vw;
+    color: white;
+  }
+  .ofrecemos .servicios .cardservicio h3 {
+    font-family: Cooper;
+    text-align: center;
+    font-size: 1rem;
+  }
+  .ofrecemos .servicios .cardservicio p {
+    color: rgb(247, 241, 237);
+    margin-top: auto;
+    font-size: 1rem;
+  }
+  .ofrecemos .servicios .cardservicio img {
+    width: 6vw;
+    filter: invert(100%);
+  }
+  .cursostalleres {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+  }
+  .cursostalleres h1 {
+    color: #fc9425;
+    font-family: Copperplate Gothic;
+    border-bottom: 1px solid #fc9425;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+    font-size: 3rem;
+    text-align: center;
+  }
+  .cursostalleres h2 {
+    color: white;
+    font-family: Cooper;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  .cursostalleres .containercursos {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+  .cursostalleres .cursotaller {
+    background-color: #83b85f;
+    border-radius: 24px;
+    padding: 2rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+  }
+  .cursostalleres .cursotaller ul {
+    margin-top: auto;
+  }
+  .cursostalleres .cursotaller ul > li {
+    color: white;
+    font-size: 1.2rem;
+  }
+  .cursostalleres .cursotaller button {
+    background-color: white;
+    outline: none;
+    border: none;
+    padding: 1rem;
+    color: #83b85f;
+    font-family: Copperplate Gothic;
+    font-size: 1.5rem;
+    margin-top: auto;
+    transition: 0.2s ease-in-out;
+  }
+  .cursostalleres .cursotaller button:hover {
+    background-color: #64ba2e;
+    outline: none;
+    border: none;
+    padding: 1rem;
+    color: white;
+    font-family: Copperplate Gothic;
+    font-size: 1.5rem;
+  }
+  .nuestros-profes {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    gap: 6rem;
+  }
+  .nuestros-profes p {
+    padding: 4rem;
+    text-align: center;
+  }
+  .nuestros-profes h1 {
+    color: #fc9425;
+    font-family: Copperplate Gothic;
+    border-bottom: 1px solid #fc9425;
+    font-size: 3rem;
+    margin-top: 6rem;
+    text-align: center;
+  }
+  .nuestros-profes h2 {
+    color: #fc9425;
+    font-family: Copperplate Gothic;
+    border-bottom: 1px solid #fc9425;
+    font-size: 2rem;
+    text-align: center;
+  }
+  .nuestros-profes .profes {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    gap: 6rem;
+  }
+  .nuestros-profes .profes .profe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .nuestros-profes .profes .profe img {
+    height: 20vh;
+    width: 20vh;
+    border-radius: 24px;
+    border: 1px solid #fc9425;
+    object-fit: cover;
+  }
+  .nuestros-profes .profes .profe .texto {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+    width: 100vw;
+  }
+  .nuestros-profes .profes .profe .texto p {
+    text-align: justify;
+  }
+  .nuestros-profes .profes .profe:nth-child(2) {
+    display: flex;
+  }
+  .nuestros-profes .profes .profe:nth-child(2) img {
+    height: 20vh;
+    width: 20vh;
+    border-radius: 24px;
+    border: 1px solid #83b85f;
+    object-fit: cover;
+  }
+  .nuestros-profes .profes .profe:nth-child(2) .texto {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+    width: 100vw;
+  }
+  .nuestros-profes .profes .profe:nth-child(2) .texto h2 {
+    color: #83b85f;
+    border-bottom: 1px solid #83b85f;
+    text-align: center;
+  }
+  .nuestros-profes .profes .profe:nth-child(2) .texto p {
+    text-align: justify;
+  }
+  .nuestros-profes .profes .profe:nth-child(4) {
+    display: flex;
+  }
+  .nuestros-profes .profes .profe:nth-child(4) img {
+    height: 20vh;
+    width: 20vh;
+    border-radius: 24px;
+    border: 1px solid #83b85f;
+    object-fit: cover;
+  }
+  .nuestros-profes .profes .profe:nth-child(4) .texto {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+    width: 100vw;
+  }
+  .nuestros-profes .profes .profe:nth-child(4) .texto h2 {
+    color: #83b85f;
+    border-bottom: 1px solid #83b85f;
+    text-align: center;
+  }
+  .nuestros-profes .profes .profe:nth-child(4) .texto p {
+    text-align: justify;
+  }
+  .nuestros-profes .profes .profe:nth-child(6) {
+    display: flex;
+  }
+  .nuestros-profes .profes .profe:nth-child(6) img {
+    height: 20vh;
+    width: 20vh;
+    border-radius: 24px;
+    border: 1px solid #83b85f;
+    object-fit: cover;
+  }
+  .nuestros-profes .profes .profe:nth-child(6) .texto {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+    width: 100vw;
+  }
+  .nuestros-profes .profes .profe:nth-child(6) .texto h2 {
+    color: #83b85f;
+    border-bottom: 1px solid #83b85f;
+    text-align: center;
+  }
+  .nuestros-profes .profes .profe:nth-child(6) .texto p {
+    text-align: justify;
+  }
+  .nuestros-profes .cards {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+  }
+  .nuestros-profes .cards .card {
+    border: none;
+    border: 1px solid #fc9425;
+  }
+  .nuestros-profes .cards .card img {
+    width: 100%;
+  }
+  .cursos-talleres {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    gap: 6rem;
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+    color: rgb(247, 241, 237);
+  }
+  .cursos-talleres h1 {
+    font-size: 4rem;
+    color: #83b85f;
+    font-family: Copperplate Gothic;
+    border-bottom: 1px solid #83b85f;
+  }
+  .cursos-talleres .cursos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    grid-auto-rows: minmax(100px, auto);
+  }
+  .cursos-talleres .card {
+    border: 1px solid #83b85f;
+    border: none;
+  }
+  .cursos-talleres .card .card-title {
+    font-family: Copperplate Gothic;
+    font-size: 2rem;
+  }
+  .cursos-talleres .card .card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 4rem 2rem 4rem;
+    background-color: #83b85f;
+    color: white;
+  }
+  .cursos-talleres .card .card-body p {
+    color: white;
+  }
+  .cursos-talleres .card img {
+    object-fit: cover;
+    height: 320px;
+  }
+  .elegirnos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .elegirnos h1 {
+    color: #64ba2e;
+    font-family: Copperplate Gothic;
+    border-bottom: 1px solid #64ba2e;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+    font-size: 3rem;
+    text-align: center;
+  }
+  .elegirnos p {
+    text-align: center;
+    padding: 2rem;
+  }
+  .elegirnos .cardselegirnos {
+    display: flex;
+    margin-top: 6rem;
+    margin: 6rem;
+    gap: 2rem;
+    text-align: center;
+    flex-direction: column;
+  }
+  .elegirnos .cardselegirnos .cardelegirnos {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fc9425;
+    border-radius: 24px;
+    padding: 2rem;
+    width: 80vw;
+    color: white;
+  }
+  .elegirnos .cardselegirnos .cardelegirnos h2 {
+    font-family: Cooper;
+    text-align: center;
+  }
+  .elegirnos .cardselegirnos .cardelegirnos p {
+    color: rgb(247, 241, 237);
+    margin-top: auto;
+    font-size: 1.5rem;
+  }
+  .elegirnos .cardselegirnos .cardelegirnos img {
+    width: 20vw;
+    filter: invert(100%);
+  }
+  .cta {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 6rem;
+    font-family: Cooper;
+  }
+  .cta h2 .green {
+    color: #64ba2e;
+  }
+  .cta p {
+    font-size: 1.5rem;
+  }
+  .cta p .orange {
+    color: #fc9425;
+  }
+  .cta button {
+    font-family: Copperplate Gothic;
+    font-size: 2rem;
+    width: 80vw;
+    background-color: transparent;
+    border: 1px solid #64ba2e;
+    color: #64ba2e;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out;
+  }
+  .cta button:hover {
+    transform: scale(1.2);
+    background-color: #64ba2e;
+    border: 1px solid white;
+    color: white;
+  }
+  .contacto {
+    background-color: #83b85f;
+    height: 32vh;
+    margin: auto;
+    padding: 6rem 0 6rem 0;
+    border-bottom: 30vh solid #83b85f;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+  }
+  .contacto .logo {
+    margin: auto;
+  }
+  .contacto .logo img {
+    height: 24vh;
+  }
+  .contacto .rrss {
+    margin: 3rem auto auto auto;
+  }
+  .contacto .rrss ul {
+    display: flex;
+    list-style-type: none;
+    gap: 4rem;
+    background-color: #83b85f;
+  }
+  .contacto .rrss ul li {
+    background-color: rgb(106, 150, 77);
+    padding: 2rem;
+    border-radius: 24px;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+  }
+  .contacto .rrss ul li a {
+    color: white;
+  }
+  .contacto .rrss ul li a svg {
+    height: 32px;
+  }
+  .contacto .rrss ul li:hover {
+    transform: scale(1.1);
+  }
+  .modal-backdrop {
+    display: none !important;
+  }
+  .modal-dialog {
+    width: 100vw;
+    height: 80vh !important;
+    z-index: 2000 !important;
+  }
+  .modal-body {
+    font-size: 1rem;
+    color: rgb(63, 61, 60);
+  }
+  .modal-body ul li {
+    color: rgb(63, 61, 60) !important;
+  }
+}
+@media screen and (min-width: 900px) {
+  * p {
+    font-size: 2rem;
+    font-family: Cooper Gothic;
+    color: rgb(130, 120, 120);
+  }
+  .hero-carousel {
+    height: 92vh;
+  }
+  .card-dir {
+    object-fit: cover;
+    width: 250px;
+    height: 250px;
+  }
+  .hero-carousel > .carousel-inner > .carousel-item > img {
+    height: 92vh;
+    object-fit: cover;
+  }
+  .carousel-control-prev {
+    width: 1vw;
+    z-index: 1;
+    filter: invert(100%);
+    transform: scale(1.6);
+    margin-left: 5rem;
+  }
+  .carousel-control-next {
+    width: 1vw;
+    z-index: 1;
+    filter: invert(100%);
+    transform: scale(1.6);
+    margin-right: 5rem;
+  }
+  .hero-label {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: 16vh;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 1;
+    color: rgb(247, 241, 237);
+    text-shadow: 2px 2px 15px black;
+    font-family: Copperplate Gothic;
+    text-align: center;
+    /* background-color: rgba(252, 148, 37, 0.4); */
+    background-image: linear-gradient(to right, rgba(252, 148, 37, 0), rgba(252, 148, 37, 0.8), rgba(252, 148, 37, 0));
+    padding: 2rem;
+    /*border-radius: 0px 24px 24px 0px;*/
+    /* box-shadow: 0px 0px 100px white; */
+  }
+  .hero-label img {
+    height: 50vh;
+  }
+  .hero-label h2 {
+    font-weight: 200;
+    font-family: Cooper;
+  }
+  .hero-label > h1 {
+    font-size: 6rem;
+  }
+  .navbar {
+    font-family: Cooper;
+    font-size: 1.5rem;
+    padding: 1rem 1rem 1rem 1rem;
+    z-index: 2;
+  }
+  .navbar * {
+    color: rgb(63, 61, 60);
+  }
+  .nav-item {
+    transition: 0.2s ease-in-out;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .nav-item:hover {
+    font-size: 1.6rem;
+    z-index: 5;
+  }
+  .navbar-brand > img {
+    padding-left: 2rem;
+    height: 64px;
+    transition: 0.2s ease-in-out;
+  }
+  .navbar-brand > img:hover {
+    transform: scale(1.2);
+  }
+  .acerca-de {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    gap: 6rem;
+    color: rgb(247, 241, 237);
+  }
+  .acerca-de h1 {
+    color: #fc9425;
+    font-family: Copperplate Gothic;
+    border-bottom: 1px solid #fc9425;
+    margin-top: 6rem;
+    font-size: 4rem;
+  }
+  .quienes-somos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    gap: 6rem;
+  }
+  .quienes-somos h1 {
+    color: #83b85f;
+    font-family: Copperplate Gothic;
+    border-bottom: 1px solid #64ba2e;
+    margin-top: 6rem;
+    font-size: 4rem;
+  }
+  .quienes-somos .quienes {
+    display: flex;
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+  .quienes-somos .quienes p {
+    padding-right: 2rem;
+  }
+  .quienes-somos .quienes img {
+    width: 40vw;
+    border: 1px solid #fc9425;
+    border-radius: 24px;
+    object-fit: cover;
+  }
+  .mision {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .mision h1 {
+    color: #fc9425;
+    font-family: Copperplate Gothic;
+    border-bottom: 1px solid #fc9425;
+    margin-top: 6rem;
+    font-size: 4rem;
+  }
+  .mision .misiones {
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .mision .misiones .cardmision {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    width: 30vw;
+  }
+  .mision .misiones .cardmision p {
+    color: rgb(130, 120, 120);
+    margin-bottom: auto;
+    text-align: center;
+  }
+  .mision .misiones .cardmision img {
+    width: 6vw;
+  }
+  .ofrecemos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .ofrecemos h1 {
+    color: #64ba2e;
+    font-family: Copperplate Gothic;
+    border-bottom: 1px solid #64ba2e;
+    margin-top: 6rem;
+    font-size: 4rem;
+  }
+  .ofrecemos .servicios {
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-left: 20vw;
+  }
+  .ofrecemos .servicios .cardservicio {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fc9425;
+    border-radius: 24px;
+    padding: 2rem;
+    width: 30vw;
+    color: white;
+  }
+  .ofrecemos .servicios .cardservicio h3 {
+    font-family: Cooper;
+    text-align: center;
+  }
+  .ofrecemos .servicios .cardservicio p {
+    color: rgb(247, 241, 237);
+    margin-top: auto;
+    font-size: 1.5rem;
+  }
+  .ofrecemos .servicios .cardservicio img {
+    width: 6vw;
+    filter: invert(100%);
+  }
+  .cursostalleres {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+  }
+  .cursostalleres h1 {
+    color: #fc9425;
+    font-family: Copperplate Gothic;
+    border-bottom: 1px solid #fc9425;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+    font-size: 4rem;
+  }
+  .cursostalleres h2 {
+    color: white;
+    font-family: Cooper;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  .cursostalleres .containercursos {
+    display: flex;
+    gap: 2rem;
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+  .cursostalleres .cursotaller {
+    background-color: #83b85f;
+    border-radius: 24px;
+    padding: 2rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+  }
+  .cursostalleres .cursotaller ul {
+    margin-top: auto;
+  }
+  .cursostalleres .cursotaller ul > li {
+    color: white;
+    font-size: 1.2rem;
+  }
+  .cursostalleres .cursotaller button {
+    background-color: white;
+    outline: none;
+    border: none;
+    padding: 1rem;
+    color: #83b85f;
+    font-family: Copperplate Gothic;
+    font-size: 1.5rem;
+    margin-top: auto;
+    transition: 0.2s ease-in-out;
+  }
+  .cursostalleres .cursotaller button:hover {
+    background-color: #64ba2e;
+    outline: none;
+    border: none;
+    padding: 1rem;
+    color: white;
+    font-family: Copperplate Gothic;
+    font-size: 1.5rem;
+  }
+  .nuestros-profes {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    gap: 6rem;
+  }
+  .nuestros-profes h1 {
+    color: #fc9425;
+    font-family: Copperplate Gothic;
+    border-bottom: 1px solid #fc9425;
+    font-size: 4rem;
+    margin-top: 6rem;
+  }
+  .nuestros-profes h2 {
+    color: #fc9425;
+    font-family: Copperplate Gothic;
+    border-bottom: 1px solid #fc9425;
+    font-size: 2.5rem;
+  }
+  .nuestros-profes .profes {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    gap: 6rem;
+  }
+  .nuestros-profes .profes .profe {
+    display: flex;
+  }
+  .nuestros-profes .profes .profe img {
+    height: 50vh;
+    border-radius: 24px;
+    border: 1px solid #fc9425;
+  }
+  .nuestros-profes .profes .profe .texto {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+  }
+  .nuestros-profes .profes .profe .texto p {
+    text-align: justify;
+  }
+  .nuestros-profes .profes .profe:nth-child(2) {
+    display: flex;
+  }
+  .nuestros-profes .profes .profe:nth-child(2) img {
+    height: 50vh;
+    border-radius: 24px;
+    border: 1px solid #83b85f;
+  }
+  .nuestros-profes .profes .profe:nth-child(2) .texto {
+    padding: 2rem;
+  }
+  .nuestros-profes .profes .profe:nth-child(2) .texto h2 {
+    color: #83b85f;
+    border-bottom: 1px solid #83b85f;
+  }
+  .nuestros-profes .profes .profe:nth-child(2) .texto p {
+    text-align: justify;
+  }
+  .nuestros-profes .profes .profe:nth-child(4) {
+    display: flex;
+  }
+  .nuestros-profes .profes .profe:nth-child(4) img {
+    height: 50vh;
+    border-radius: 24px;
+    border: 1px solid #83b85f;
+  }
+  .nuestros-profes .profes .profe:nth-child(4) .texto {
+    padding: 2rem;
+  }
+  .nuestros-profes .profes .profe:nth-child(4) .texto h2 {
+    color: #83b85f;
+    border-bottom: 1px solid #83b85f;
+  }
+  .nuestros-profes .profes .profe:nth-child(4) .texto p {
+    text-align: justify;
+  }
+  .nuestros-profes .profes .profe:nth-child(6) {
+    display: flex;
+  }
+  .nuestros-profes .profes .profe:nth-child(6) img {
+    height: 50vh;
+    border-radius: 24px;
+    border: 1px solid #83b85f;
+  }
+  .nuestros-profes .profes .profe:nth-child(6) .texto {
+    padding: 2rem;
+  }
+  .nuestros-profes .profes .profe:nth-child(6) .texto h2 {
+    color: #83b85f;
+    border-bottom: 1px solid #83b85f;
+  }
+  .nuestros-profes .profes .profe:nth-child(6) .texto p {
+    text-align: justify;
+  }
+  .nuestros-profes .cards {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+  }
+  .nuestros-profes .cards .card {
+    border: none;
+    border: 1px solid #fc9425;
+  }
+  .nuestros-profes .cards .card img {
+    width: 100%;
+  }
+  .cursos-talleres {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    gap: 6rem;
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+    color: rgb(247, 241, 237);
+  }
+  .cursos-talleres h1 {
+    font-size: 4rem;
+    color: #83b85f;
+    font-family: Copperplate Gothic;
+    border-bottom: 1px solid #83b85f;
+  }
+  .cursos-talleres .cursos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    grid-auto-rows: minmax(100px, auto);
+  }
+  .cursos-talleres .card {
+    border: 1px solid #83b85f;
+    border: none;
+  }
+  .cursos-talleres .card .card-title {
+    font-family: Copperplate Gothic;
+    font-size: 2rem;
+  }
+  .cursos-talleres .card .card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 4rem 2rem 4rem;
+    background-color: #83b85f;
+    color: white;
+  }
+  .cursos-talleres .card .card-body p {
+    color: white;
+  }
+  .cursos-talleres .card img {
+    object-fit: cover;
+    height: 320px;
+  }
+  .elegirnos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .elegirnos h1 {
+    color: #64ba2e;
+    font-family: Copperplate Gothic;
+    border-bottom: 1px solid #64ba2e;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+    font-size: 4rem;
+  }
+  .elegirnos .cardselegirnos {
+    display: flex;
+    margin-top: 6rem;
+    margin: 6rem;
+    gap: 2rem;
+    text-align: center;
+  }
+  .elegirnos .cardselegirnos .cardelegirnos {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fc9425;
+    border-radius: 24px;
+    padding: 2rem;
+    width: 30vw;
+    color: white;
+  }
+  .elegirnos .cardselegirnos .cardelegirnos h2 {
+    font-family: Cooper;
+    text-align: center;
+  }
+  .elegirnos .cardselegirnos .cardelegirnos p {
+    color: rgb(247, 241, 237);
+    margin-top: auto;
+    font-size: 1.5rem;
+  }
+  .elegirnos .cardselegirnos .cardelegirnos img {
+    width: 6vw;
+    filter: invert(100%);
+  }
+  .cta {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 6rem;
+    font-family: Cooper;
+  }
+  .cta h2 .green {
+    color: #64ba2e;
+  }
+  .cta p {
+    font-size: 1.5rem;
+  }
+  .cta p .orange {
+    color: #fc9425;
+  }
+  .cta button {
+    font-family: Copperplate Gothic;
+    font-size: 2rem;
+    width: 20vw;
+    background-color: transparent;
+    border: 1px solid #64ba2e;
+    color: #64ba2e;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out;
+  }
+  .cta button:hover {
+    transform: scale(1.2);
+    background-color: #64ba2e;
+    border: 1px solid white;
+    color: white;
+  }
+  .contacto {
+    background-color: #83b85f;
+    height: 32vh;
+    margin: auto;
+    display: flex;
+    margin: auto;
+  }
+  .contacto .logo {
+    margin: auto;
+  }
+  .contacto .logo img {
+    height: 24vh;
+  }
+  .contacto .rrss {
+    margin: auto;
+  }
+  .contacto .rrss ul {
+    display: flex;
+    list-style-type: none;
+    gap: 4rem;
+  }
+  .contacto .rrss ul li {
+    background-color: rgb(106, 150, 77);
+    padding: 2rem;
+    border-radius: 24px;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+  }
+  .contacto .rrss ul li a {
+    color: white;
+  }
+  .contacto .rrss ul li a svg {
+    height: 32px;
+  }
+  .contacto .rrss ul li:hover {
+    transform: scale(1.1);
+  }
+  .modal-backdrop {
+    display: none !important;
+  }
+  .modal-dialog {
+    width: 50vw;
+    height: 80vh !important;
+    z-index: 2000 !important;
+  }
+  .modal-body {
+    font-size: 1rem;
+    color: rgb(63, 61, 60);
+  }
+  .modal-body ul li {
+    color: rgb(63, 61, 60) !important;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
