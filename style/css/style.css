@@ -6,6 +6,16 @@
   font-family: Cooper;
   src: url(../../assets/fonts/CooperFiveOpti-Black.otf);
 }
+.firma {
+  background-color: #83b85f;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .navbar {
   position: fixed;
   width: 100vw;
